@@ -1,97 +1,42 @@
 ```
-# Dependencies
-node_modules/
+# Unity specific ignores
+Library/
+Temp/
+Obj/
+Build/
+Logs/
+MemoryCaptures/
+*.unityproj
+*.sln
+*.csproj
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.meta
+*.prefab
+*.asset
+*.lock
+*.bin
+*.mpx
 
-# Logs and temp files
-*.log
-*.tmp
-*.swp
-
-# Environment
-.env
-.env.local
-*.env.*
-
-# Editors
-.vscode/
-.idea/
-
-# Build artifacts
-dist/
-build/
-target/
-*.o
-*.obj
-*.exe
-*.dll
-*.so
-*.a
-*.out
-
-# Python
-__pycache__/
-*.pyc
-*.pyo
-*.pyd
-.Python
-env/
-venv/
-.venv/
-pip-log.txt
-pip-selfcheck.json
-.tox/
-.coverage
-coverage/
-htmlcov/
-.pytest_cache/
-.mypy_cache/
-
-# Java
-*.class
-*.jar
-*.war
-*.ear
-*.nar
-.gradle/
-build/
-
-# C/C++
-*.i
-*.ii
-*.s
-*.su
-*.lo
-
-# Compressed files
-*.zip
-*.gz
-*.tar
-*.tgz
-*.bz2
-*.xz
-*.7z
-*.rar
-*.zst
-*.lz4
-*.lzh
-*.cab
-*.arj
-*.rpm
-*.deb
-*.Z
-*.lz
-*.lzo
-*.tar.gz
-*.tar.bz2
-*.tar.xz
-*.tar.zst
-
-# OS generated files
-.DS_Store
-.DS_Store?
-._*
-.Spotlight-V100
-.Trashes
-ehthumbs.db
-Thumbs.db
+# PlyGame specific (if generated)
+Packages/com.plygame/Editor/PlyGameEditorWindow.cs.meta
+Packages/com.plygame/Editor/PlyGraphView.cs.meta
+Packages/com.plygame/Runtime/Achievements/AchievementSystem.cs.meta
+Packages/com.plygame/Runtime/Core/EventBus.cs.meta
+Packages/com.plygame/Runtime/Core/GraphAsset.cs.meta
+Packages/com.plygame/Runtime/Core/GraphNode.cs.meta
+Packages/com.plygame/Runtime/Core/SerializationService.cs.meta
+Packages/com.plygame/Runtime/Dialogue/DialogueSystem.cs.meta
+Packages/com.plygame/Runtime/Inventory/InventorySystem.cs.meta
+Packages/com.plygame/Runtime/Nodes/VariableNodes.cs.meta
+Packages/com.plygame/Runtime/Quests/QuestSystem.cs.meta
+Packages/com.plygame/Runtime/SaveSystem/SaveGameManager.cs.meta
+Packages/com.plygame/Runtime/Skills/SkillSystem.cs.meta
+Packages/com.plygame/Runtime/Stats/StatsSystem.cs.meta
+Packages/com.plygame/Runtime/Variables/GraphVariable.cs.meta
+Packages/com.plygame/Runtime/Variables/VariableManager.cs.meta
 ```
