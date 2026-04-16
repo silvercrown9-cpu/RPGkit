@@ -22,7 +22,6 @@
   },
   "dependencies": {
     "com.plygame.runtime": "1.0.0",
-    "com.unity.modules.graphview": "1.0.0",
     "com.unity.modules.ui": "1.0.0"
   }
 }
