@@ -5,7 +5,7 @@ using System.Text.Json;
 using System.Threading.Tasks;
 using UnityEngine;
 
-namespace PlyGame.Core
+namespace PlyGame.Runtime.Core.Serialization
 {
     /// <summary>
     /// Современный сервис сериализации на базе System.Text.Json

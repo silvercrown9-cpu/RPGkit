@@ -1,10 +1,10 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using PlyGame.Core;
+using PlyGame.Runtime.Core.Events;
 using UnityEngine;
 
-namespace PlyGame.Variables
+namespace PlyGame.Runtime.Variables
 {
     /// <summary>
     /// Менеджер переменных для хранения и управления переменными графа

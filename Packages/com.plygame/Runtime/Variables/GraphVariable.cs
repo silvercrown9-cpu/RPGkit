@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-namespace PlyGame.Variables
+namespace PlyGame.Runtime.Variables
 {
     /// <summary>
     /// Базовый класс для переменных графа

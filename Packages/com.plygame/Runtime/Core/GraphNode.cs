@@ -4,7 +4,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using UnityEngine;
 
-namespace PlyGame.Core
+namespace PlyGame.Runtime.Core.Graph
 {
     /// <summary>
     /// Контекст выполнения графа, передающий данные между узлами

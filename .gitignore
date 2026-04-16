@@ -16,27 +16,93 @@ MemoryCaptures/
 *.svd
 *.pdb
 *.meta
-*.prefab
-*.asset
-*.lock
-*.bin
-*.mpx
+*.log
+*.unitypackage
+[._]*.sln
+[._]*.csproj
+[._]*.user
+[._]*.userprefs
+[._]*.pidb
+[._]*.booproj
+[._]*.svd
+[._]*.pdb
+[._]*.meta
+[._]*.log
 
-# PlyGame specific (if generated)
-Packages/com.plygame/Editor/PlyGameEditorWindow.cs.meta
-Packages/com.plygame/Editor/PlyGraphView.cs.meta
-Packages/com.plygame/Runtime/Achievements/AchievementSystem.cs.meta
-Packages/com.plygame/Runtime/Core/EventBus.cs.meta
-Packages/com.plygame/Runtime/Core/GraphAsset.cs.meta
-Packages/com.plygame/Runtime/Core/GraphNode.cs.meta
-Packages/com.plygame/Runtime/Core/SerializationService.cs.meta
-Packages/com.plygame/Runtime/Dialogue/DialogueSystem.cs.meta
-Packages/com.plygame/Runtime/Inventory/InventorySystem.cs.meta
-Packages/com.plygame/Runtime/Nodes/VariableNodes.cs.meta
-Packages/com.plygame/Runtime/Quests/QuestSystem.cs.meta
-Packages/com.plygame/Runtime/SaveSystem/SaveGameManager.cs.meta
-Packages/com.plygame/Runtime/Skills/SkillSystem.cs.meta
-Packages/com.plygame/Runtime/Stats/StatsSystem.cs.meta
-Packages/com.plygame/Runtime/Variables/GraphVariable.cs.meta
-Packages/com.plygame/Runtime/Variables/VariableManager.cs.meta
+# Build outputs
+*.dll
+*.exe
+*.so
+*.dylib
+*.nib
+*.plist
+*.bin
+*.out
+*.a
+*.o
+
+# Environment variables
+.env
+.env.local
+*.env.*
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*.tmp
+
+# Dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Testing
+coverage/
+htmlcov/
+.coverage
+*.gcov
+*.lcov
+
+# Python specific (if applicable)
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.so
+.pytest_cache/
+.mypy_cache/
+.tox/
+
+# Node.js specific (if applicable)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Distribution / packaging
+.Python
+*.so
+.libs/
+*.tar.gz
+*.whl
+
+# IDE
+.vs/
+*.swp
+*.swo
+*~
 ```

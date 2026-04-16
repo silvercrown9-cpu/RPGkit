@@ -1,10 +1,10 @@
 using System;
 using System.Threading.Tasks;
-using PlyGame.Core;
-using PlyGame.Variables;
+using PlyGame.Runtime.Core.Graph;
+using PlyGame.Runtime.Variables;
 using UnityEngine;
 
-namespace PlyGame.Nodes
+namespace PlyGame.Runtime.Nodes
 {
     /// <summary>
     /// Узел установки значения переменной
@@ -20,22 +20,22 @@ namespace PlyGame.Nodes
         
         public SetVariableNode()
         {
-            nodeName = "Set Variable";
-            nodeDescription = "Устанавливает значение переменной";
+            Name = "Set Variable";
+            Description = "Устанавливает значение переменной";
         }
         
-        public override Task<NodeExecutionResult> ExecuteAsync(ExecutionContext context)
+        public override async Task<NodeExecutionResult> ExecuteAsync(ExecutionContext context)
         {
-            var variableManager = context.GetData<VariableManager>("VariableManager");
+            var variableManager = context.GetVariable<VariableManager>("VariableManager");
             
             if (variableManager == null)
             {
-                return Task.FromResult(NodeExecutionResult.FailureResult("VariableManager not found in context"));
+                return NodeExecutionResult.FailureResult("VariableManager not found in context");
             }
             
             if (!variableManager.HasVariable(variableId))
             {
-                return Task.FromResult(NodeExecutionResult.FailureResult($"Variable {variableId} not found"));
+                return NodeExecutionResult.FailureResult($"Variable {variableId} not found");
             }
             
             var value = valueToSet.GetValue(context);
@@ -43,7 +43,7 @@ namespace PlyGame.Nodes
             
             Debug.Log($"Переменная {variableId} установлена в {value}");
             
-            return Task.FromResult(NodeExecutionResult.SuccessResult());
+            return NodeExecutionResult.SuccessResult();
         }
     }
     
@@ -64,23 +64,23 @@ namespace PlyGame.Nodes
         
         public CheckVariableNode()
         {
-            nodeName = "Check Variable";
-            nodeDescription = "Проверяет условие и переходит по соответствующей ветке";
+            Name = "Check Variable";
+            Description = "Проверяет условие и переходит по соответствующей ветке";
         }
         
-        public override Task<NodeExecutionResult> ExecuteAsync(ExecutionContext context)
+        public override async Task<NodeExecutionResult> ExecuteAsync(ExecutionContext context)
         {
-            var variableManager = context.GetData<VariableManager>("VariableManager");
+            var variableManager = context.GetVariable<VariableManager>("VariableManager");
             
             if (variableManager == null)
             {
-                return Task.FromResult(NodeExecutionResult.FailureResult("VariableManager not found"));
+                return NodeExecutionResult.FailureResult("VariableManager not found");
             }
             
             var variable = variableManager.GetVariable<GraphVariable>(variableId);
             if (variable == null)
             {
-                return Task.FromResult(NodeExecutionResult.FailureResult($"Variable {variableId} not found"));
+                return NodeExecutionResult.FailureResult($"Variable {variableId} not found");
             }
             
             var currentValue = variable.GetValue();
@@ -100,7 +100,7 @@ namespace PlyGame.Nodes
             var nextNodeId = result ? trueNodeId : falseNodeId;
             Debug.Log($"Проверка переменной {variableId}: {(result ? "true" : "false")}");
             
-            return Task.FromResult(NodeExecutionResult.SuccessResult(nextNodeId));
+            return NodeExecutionResult.SuccessResult(nextNodeId);
         }
         
         private bool CompareValues(object a, object b, int direction)
@@ -132,23 +132,23 @@ namespace PlyGame.Nodes
         
         public MathOperationNode()
         {
-            nodeName = "Math Operation";
-            nodeDescription = "Выполняет математическую операцию над переменной";
+            Name = "Math Operation";
+            Description = "Выполняет математическую операцию над переменной";
         }
         
-        public override Task<NodeExecutionResult> ExecuteAsync(ExecutionContext context)
+        public override async Task<NodeExecutionResult> ExecuteAsync(ExecutionContext context)
         {
-            var variableManager = context.GetData<VariableManager>("VariableManager");
+            var variableManager = context.GetVariable<VariableManager>("VariableManager");
             
             if (variableManager == null)
             {
-                return Task.FromResult(NodeExecutionResult.FailureResult("VariableManager not found"));
+                return NodeExecutionResult.FailureResult("VariableManager not found");
             }
             
             var variable = variableManager.GetVariable<GraphVariable>(targetVariableId);
             if (variable == null)
             {
-                return Task.FromResult(NodeExecutionResult.FailureResult($"Variable {targetVariableId} not found"));
+                return NodeExecutionResult.FailureResult($"Variable {targetVariableId} not found");
             }
             
             var currentValue = variable.GetValue();
@@ -167,7 +167,7 @@ namespace PlyGame.Nodes
             variable.SetValue(result);
             Debug.Log($"Математическая операция: {currentValue} {operationType} {operandValue} = {result}");
             
-            return Task.FromResult(NodeExecutionResult.SuccessResult());
+            return NodeExecutionResult.SuccessResult();
         }
         
         private object AddValues(object a, object b)
@@ -248,7 +248,7 @@ namespace PlyGame.Nodes
         {
             if (valueType == ValueType.VariableReference && !string.IsNullOrEmpty(variableReferenceId))
             {
-                var variableManager = context.GetData<VariableManager>("VariableManager");
+                var variableManager = context.GetVariable<VariableManager>("VariableManager");
                 if (variableManager != null)
                 {
                     var variable = variableManager.GetVariable<GraphVariable>(variableReferenceId);

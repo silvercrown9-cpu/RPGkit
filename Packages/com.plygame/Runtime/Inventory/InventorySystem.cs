@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
-namespace PlyGame.Inventory
+namespace PlyGame.Runtime.Inventory
 {
     /// <summary>
     /// Менеджер системы инвентаря

@@ -1,11 +1,12 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using PlyGame.Core;
+using PlyGame.Runtime.Core.Graph;
+using PlyGame.Runtime.Core.Events;
 using UnityEngine;
 using UnityEngine.Events;
 
-namespace PlyGame.Quests
+namespace PlyGame.Runtime.Quests
 {
     /// <summary>
     /// Менеджер системы квестов

@@ -2,9 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using UnityEngine;
-using UnityEngine.Events;
 
-namespace PlyGame.Core
+namespace PlyGame.Runtime.Core.Events
 {
     /// <summary>
     /// Базовый класс для событий шины событий

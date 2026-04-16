@@ -1,11 +1,12 @@
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using PlyGame.Core;
+using PlyGame.Runtime.Core.Graph;
+using PlyGame.Runtime.Core.Events;
 using UnityEngine;
 using UnityEngine.Events;
 
-namespace PlyGame.Dialogue
+namespace PlyGame.Runtime.Dialogue
 {
     /// <summary>
     /// Менеджер диалоговой системы

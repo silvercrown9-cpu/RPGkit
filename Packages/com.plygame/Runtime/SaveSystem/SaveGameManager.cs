@@ -2,10 +2,10 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Threading.Tasks;
-using PlyGame.Core;
+using PlyGame.Runtime.Core.Serialization;
 using UnityEngine;
 
-namespace PlyGame.SaveSystem
+namespace PlyGame.Runtime.SaveSystem
 {
     /// <summary>
     /// Менеджер системы сохранений игры

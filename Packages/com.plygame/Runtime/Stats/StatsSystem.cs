@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace PlyGame.Stats
+namespace PlyGame.Runtime.Stats
 {
     /// <summary>
     /// Менеджер характеристик персонажа

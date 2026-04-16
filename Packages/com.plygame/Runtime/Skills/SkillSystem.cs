@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace PlyGame.Skills
+namespace PlyGame.Runtime.Skills
 {
     /// <summary>
     /// Менеджер системы навыков и способностей

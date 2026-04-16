@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
-namespace PlyGame.Core
+namespace PlyGame.Runtime.Core.Graph
 {
     /// <summary>
     /// Связь между узлами графа
