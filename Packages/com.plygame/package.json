@@ -1,0 +1,35 @@
+{
+  "name": "com.plygame",
+  "version": "2.0.0",
+  "displayName": "PlyGame Modern RPG Framework",
+  "description": "Полнофункциональный фреймворк для создания RPG-игр с визуальным редактором графов, системой квестов, диалогов, инвентаря, характеристик и навыков. Современный аналог plyGame для Unity 2022 LTS+.",
+  "unity": "2022.3",
+  "unityRelease": "0f1",
+  "keywords": [
+    "rpg",
+    "graph",
+    "quest",
+    "dialogue",
+    "inventory",
+    "node-editor",
+    "visual-scripting"
+  ],
+  "author": {
+    "name": "PlyGame Team",
+    "email": "support@plygame.com",
+    "url": "https://plygame.com"
+  },
+  "type": "library",
+  "dependencies": {
+    "com.unity.modules.ui": "1.0.0",
+    "com.unity.modules.jsonserialize": "1.0.0",
+    "com.unity.modules.imgui": "1.0.0"
+  },
+  "samples": [
+    {
+      "displayName": "RPG Demo",
+      "description": "Пример использования всех систем PlyGame",
+      "path": "Samples~/RPGDemo"
+    }
+  ]
+}

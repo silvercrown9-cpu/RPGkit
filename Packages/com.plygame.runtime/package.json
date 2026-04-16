@@ -1,0 +1,26 @@
+{
+  "name": "com.plygame.runtime",
+  "version": "1.0.0",
+  "displayName": "PlyGame Runtime",
+  "description": "Modern runtime core for PlyGame-like visual scripting framework. Compatible with Unity 2022 LTS+.",
+  "unity": "2022.3",
+  "unityRelease": "0f1",
+  "documentationUrl": "https://github.com/your-org/plygame-modern/docs",
+  "changelogUrl": "https://github.com/your-org/plygame-modern/changelog",
+  "licensesUrl": "https://github.com/your-org/plygame-modern/license",
+  "keywords": [
+    "rpg",
+    "visual-scripting",
+    "graph",
+    "dialogue",
+    "quest"
+  ],
+  "author": {
+    "name": "Your Name",
+    "email": "your.email@example.com",
+    "url": "https://your-website.com"
+  },
+  "dependencies": {
+    "com.unity.modules.jsonserialize": "1.0.0"
+  }
+}

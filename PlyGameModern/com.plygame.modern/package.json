@@ -1,0 +1,40 @@
+{
+  "name": "com.plygame.modern",
+  "version": "1.0.0",
+  "displayName": "PlyGame Modern",
+  "description": "Modern visual RPG framework for Unity 2022 LTS+. Complete replacement for legacy plyGame with async execution, GraphView editor, and full RPG systems.",
+  "unity": "2022.3",
+  "unityRelease": "0f1",
+  "keywords": [
+    "rpg",
+    "graph",
+    "node",
+    "dialogue",
+    "quest",
+    "inventory",
+    "visual scripting"
+  ],
+  "author": {
+    "name": "PlyGame Community",
+    "email": "support@plygame.dev",
+    "url": "https://github.com/plygame/modern"
+  },
+  "type": "library",
+  "dependencies": {
+    "com.unity.modules.ui": "1.0.0",
+    "com.unity.modules.physics": "1.0.0",
+    "com.unity.modules.jsonserialize": "1.0.0"
+  },
+  "samples": [
+    {
+      "displayName": "Dialogue System Sample",
+      "description": "Complete dialogue system example with branching conversations",
+      "path": "Samples~/Dialogue"
+    },
+    {
+      "displayName": "Quest System Sample",
+      "description": "Quest management with objectives and rewards",
+      "path": "Samples~/Quests"
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+```
+# Unity/Mono specific
+*.csproj
+*.unityproj
+*.sln
+*.suo
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.mdb
+*.opendb
+*.Unity.Locator
+
+# Build results
+[Bb]uild/
+[Bb]uilds/
+[Tt]emp/
+[Ll]ibrary/
+[Oo]bj/
+[Ll]ogs/
+[Uu]serSettings/
+
+# Visual Studio Code
+.vscode/
+
+# Environment
+.env
+.env.local
+*.env.*
+
+# Dependencies
+Packages/
+node_modules/
+Assets/Plugins/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Icon?
+desktop.ini
+
+# Compiled Python files
+*.pyc
+__pycache__/
+*.pyo
+
+# Logs
+*.log
+
+# User-specific
+*.tmp
+*.temp
+```
